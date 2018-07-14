@@ -1,0 +1,6 @@
+*~
+\#*\#
+/straight/*.el
+/straight/repos
+/straight/build
+/straight/modified

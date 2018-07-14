@@ -13,4 +13,5 @@
 	(goto-char (point-max))
 	(eval-print-last-sexp)))
     (load bootstrap-file nil 'nomessage))
+  (straight-use-package 'epkgs) ; for some reason, if I leave this out, freezing will fail.
   (straight-use-package 'ace-window))

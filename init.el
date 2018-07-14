@@ -1,5 +1,6 @@
-(progn (setq user-emacs-directory (expand-file-name "~/Mess/current/straight-repro")
-	     user-init-file (concat user-emacs-directory "/init.el"))
+(progn (setq
+        user-init-file (buffer-file-name)
+        user-emacs-directory (file-name-directory user-init-file))
 
 (let ((bootstrap-file
        (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
@@ -12,4 +13,4 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 (straight-use-package 'ace-window)
-) 
+)

@@ -1,4 +1,7 @@
 (progn
+  (when (and (boundp 'user-init-file) user-init-file)
+    (error "Run this in emacs -Q, please!"))
+
   (setq
    user-init-file (buffer-file-name)
    user-emacs-directory (file-name-directory user-init-file))

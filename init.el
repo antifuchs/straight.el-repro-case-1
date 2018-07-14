@@ -13,9 +13,7 @@
 	(goto-char (point-max))
 	(eval-print-last-sexp)))
     (load bootstrap-file nil 'nomessage))
-  (straight-use-package 'ace-window)
-
-  ;; Putting this here for reproduction convenience:
-  (straight-thaw-versions))
+  (straight-use-package 'emacsmirror) ; somehow I can't freeze versions when I leave this out.
+  (straight-use-package 'ace-window))
 
 ;; Next step: M-x straight-freeze-versions RET, then =git diff= to validate that ace-window's frozen version has changed.

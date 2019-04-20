@@ -3,5 +3,5 @@
  ("elpa" . "d9d04d151c636b4836d3789c445dc3cdf95621d4")
  ("epkgs" . "2fbb0caedfc168000251238e6ce49f39ceae32ba")
  ("melpa" . "8a7ba24b9d96d50605e7a8304b7edbc1553ba3af")
- ("straight.el" . "2c74d058db8399f55b948d79429c24441b338138"))
+ ("straight.el" . "790a3ba59419c2d35915e7313df3c20f5c230af7"))
 :jupiter

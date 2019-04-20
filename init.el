@@ -4,7 +4,8 @@
 
   (setq
    user-init-file (buffer-file-name)
-   user-emacs-directory (file-name-directory user-init-file))
+   user-emacs-directory (file-name-directory user-init-file)
+   straight-recipe-overrides '((nil (straight :type git :host github :repo "antifuchs/straight.el" :files ("straight*.el") :branch "no-decapitate"))))
 
   (let ((bootstrap-file
          (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
